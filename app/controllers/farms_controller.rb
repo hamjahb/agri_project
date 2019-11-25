@@ -9,7 +9,7 @@ class FarmsController < ApplicationController
         Farm.find(params[:id]).destroy
         redirect_to farms_path
 
-    def edit
+    def editg
         @farm = farm.find(params[:id])
     end
     def update
