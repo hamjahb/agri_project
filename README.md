@@ -42,8 +42,9 @@ The idea of the project is to help farmers and consumers to efficiently monitor 
 ![Example WireFrame](./app/assets/images/AdminDashboard.png)
 
 ## Screenshots 
+### ER Diagram
 ![Example screenshot](./app/assets/images/erdiagram.JPG)
-
+### App Home Page
 ![Example screenshot](./app/assets/images/app1.png)
 
 
