@@ -15,11 +15,11 @@ Agriculture Project
 The idea of the project is to help farmers and consumers to efficiently monitor field's activities such as products used on fields, watering frequecy etc.
 
 ## Screenshots 
-* ER Diagram
-![Example screenshot](./img/erdiagram.jpg)
+* ER Diagram 
+![Example screenshot](./mnt/c/sei/projects/agri_project/app/assets/images/erdiagram.JPG)
 
 * App Home Page
-![Example screenshot](./img/app1.png)
+![Example screenshot](./mnt/c/sei/projects/agri_project/app/assets/images/app1.png)
 
 
 ## Technologies
