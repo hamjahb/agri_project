@@ -50,9 +50,11 @@ class LogsController < ApplicationController
   end
 
   private
+  # "http://localhost:3000/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
   # "https://agriproject.herokuapp.com/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
+  
   def make_qrcode(path)
-    qrcode = RQRCode::QRCode.new("ejemplo")
+    qrcode = RQRCode::QRCode.new("https://agriproject.herokuapp.com/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs")
     image = qrcode.as_png(
       resize_gte_to: false,
       resize_exactly_to: false,
