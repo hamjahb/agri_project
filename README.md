@@ -16,10 +16,10 @@ The idea of the project is to help farmers and consumers to efficiently monitor 
 
 ## Screenshots 
 * ER Diagram
-![Example screenshot](.img/erdiagram.jpg)
+![Example screenshot](./img/erdiagram.jpg)
 
 * App Home Page
-![Example screenshot](.img/app1.png)
+![Example screenshot](./img/app1.png)
 
 
 ## Technologies
