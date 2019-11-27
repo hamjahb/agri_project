@@ -15,11 +15,11 @@ Agriculture Project
 The idea of the project is to help farmers and consumers to efficiently monitor field's activities such as products used on fields, watering frequecy etc.
 
 ## Screenshots 
-*** ***	 ER Diagram
-![Example screenshot](.app/assets/images/er diagram.jpg)
+* ER Diagram
+![Example screenshot](.img/erdiagram.jpg)
 
-*** ***	 App Home Page
-![Example screenshot](.app/assets/images/app1.png)
+* App Home Page
+![Example screenshot](.img/app1.png)
 
 
 ## Technologies
@@ -54,7 +54,6 @@ To-do list:
 * Add drop down selections in logs
 * Add QR code scanner
 * Add crop images to database
-* 
 
 ## Status
 Version (1) was completed.
@@ -66,10 +65,10 @@ Due to problems agriculture industry is facing: in terms of the quality of their
 
 ## Contact
 Created by 
-[@Hisham](h.aljahbli@gmail.com)
-[@Obied](obal3588@colorado.edu) 
-[@Lama](lamafa97@gmail.com) 
-[@Raji](poower@gmail.com) 
-[@Abdullah](abdullah_rashed.a@icloud.com) 
+ [@Hisham](h.aljahbli@gmail.com)
+ [@Obied](obal3588@colorado.edu) 
+ [@Lama](lamafa97@gmail.com) 
+ [@Raji](poower@gmail.com) 
+ [@Abdullah](abdullah_rashed.a@icloud.com) 
 
 feel free to contact us!
