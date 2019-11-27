@@ -1,8 +1,7 @@
+
+
 <h1>Farm name :<%=@farm.name %> </h1>
-
-
 <h3>Plot name: <%=@plot.name %> </h3>
-
 <table class="table table-striped">
 <thead>
 <tr>
@@ -34,7 +33,12 @@
 <div class="text-center">
 >>>>>>> 9c831f9cdab83a3dcb6b0e03c827c9608511084a
 <% if current_user.emp || current_user.admin %>
-    <button> <%= link_to "Add New Log", new_farm_plot_log_path(farm_id: @farm.id ,plot_id:@plot.id)  %> </button>
+    <button class="butt1" > <%= link_to "Add New Log", new_farm_plot_log_path(farm_id: @farm.id ,plot_id:@plot.id)  %> </button>
 <%end%>
 <button class="butt1"> <%= link_to 'Back', :back %></button> 
+<button class="butt1"> <%= link_to "Download QR code", log_qr_path(@path) %> </button>
 </div>
+
+
+
+

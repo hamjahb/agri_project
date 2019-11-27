@@ -1,10 +1,15 @@
 class LogsController < ApplicationController
+<<<<<<< HEAD
   require 'rqrcode'
+=======
+  require "rqrcode"
+>>>>>>> 4938230a89af9432f3228b52574f6ca182665d37
 
   def index
     @farm = Farm.find(params[:farm_id])
     @plot = Plot.find(params[:plot_id])
     @logs = @plot.logs.all
+<<<<<<< HEAD
 
 
     qrcode = RQRCode::QRCode.new("http://localhost:3000/farms/1/")
@@ -25,6 +30,9 @@ class LogsController < ApplicationController
     
     IO.write("logs.png", png.to_s)
 
+=======
+    @path = "http://localhost:3000/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
+>>>>>>> 4938230a89af9432f3228b52574f6ca182665d37
   end
 
   def new
@@ -61,5 +69,27 @@ class LogsController < ApplicationController
     @log = @plot.logs.find(params[:id]).destroy
 
     redirect_to "/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
+  end
+
+  def generateQrcode
+    qrcode = make_qrcode(params[:format])
+    send_data qrcode, type: "image/png", :disposition => "inline"
+  end
+
+  private
+
+  def make_qrcode(path)
+    qrcode = RQRCode::QRCode.new("ejemplo")
+    image = qrcode.as_png(
+      resize_gte_to: false,
+      resize_exactly_to: false,
+      fill: "white",
+      color: "black",
+      size: 120,
+      border_modules: 4,
+      module_px_size: 6,
+      file: nil, # path to write
+    )
+    image.resize(400, 400)
   end
 end

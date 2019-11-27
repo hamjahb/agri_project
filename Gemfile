@@ -2,7 +2,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
+<<<<<<< HEAD
 # Use rqrcode
+=======
+
+>>>>>>> 4938230a89af9432f3228b52574f6ca182665d37
 gem 'rqrcode'
 # Use Bootstrap4
 gem 'bootstrap', '~> 4.3.1'
