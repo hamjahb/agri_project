@@ -1,10 +1,27 @@
-<table class="table table-striped" >
+<nav class="navbar navbar-expand-md p-1 mb-1 navbar navbar-custom">
+<a class="navbar-brand" href="/">AGRI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+<%= link_to  "Farms", farms_path%>
+<% if current_user.admin %>
+<%= link_to  "Admin Dashboard", admins_path%>
+<%end%>
+</div>
+</nav>
+
+
+
+<table class="table table-striped">
 <thead>
 <tr>
-<th scope="col" class="bg-success">Name</th>
-<th scope="col" class="bg-success">Location</th>
-<th scope="col" class="bg-success">Delete Farm</th>
-<th scope="col" class="bg-success">Edit Farm</th>
+<th scope="col" class="bg-success"> Name </th>
+<th scope="col" class="bg-success"> Location </th>
+   <% if current_user.admin %>
+<th scope="col" class="bg-success"> Delete Farm </th>
+<th scope="col" class="bg-success"> Edit Farm </th>
+<%end%>
 
 </tr>
 </thead>
@@ -26,13 +43,14 @@
 </td>
 </tr>
 <% end %>
-</body>
+</tbody>
 </table>
 
 <br/>
 
-<button class="butt1" > <%= link_to 'Back', :back %></button> 
-<% if current_user.admin || current_user.emp%>
-<button class="butt1"> <%= link_to "Add New farm", new_farm_path %> </button>
-<%end%>
-
+<div class="text-center">
+    <button class="butt1" > <%= link_to 'Back', :back %></button> 
+    <% if current_user.admin || current_user.emp%>
+    <button class="butt1"> <%= link_to "Add New farm", new_farm_path %> </button>
+    <%end%>
+</div>
