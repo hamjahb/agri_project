@@ -15,13 +15,31 @@ Agriculture Project
 The idea of the project is to help farmers and consumers to efficiently monitor field's activities such as products used on fields, watering frequecy etc.
 
 ## User Stories
+User stories (Farmer):
+-	As farmer, I want to know what employees did in my fields.
+-	As farmer, I want to monitor my fields history.
+-	As farmer, I want to add\delete employees into my farm.
+-	As farmer, I want to add\delete field history.
+-	As farmer, I want to select a crop in the field.
+User stories (Employee):
+-	As employee, I can sign in/sign out to the website.
+-	As employee, I want to access field information with QR code.
+-	As employee, I want to fill a form to add what I did in the field.
+User stories (Customer):
+-	As customer, I want to access field information with QR code.
+-	As customer, I can sign in to the website (Optional).
+-	As customer, I want to write comments (Optional).
 
 ## Wire Frames
-![Example WireFrame](.app/assets/images/HomePage.png)
-![Example WireFrame](.app/assets/images/SignUp.png)
-![Example WireFrame](.app/assets/images/Farms.png)
-![Example WireFrame](.app/assets/images/Plots.png)
-![Example WireFrame](.app/assets/images/AdminDashboard.png)
+![Example WireFrame](./app/assets/images/AdminDashboard.png)
+
+![Example WireFrame](./app/assets/images/SignUp.png)
+
+![Example WireFrame](./app/assets/images/Farms.png)
+
+![Example WireFrame](./app/assets/images/Plots.png)
+
+![Example WireFrame](./app/assets/images/AdminDashboard.png)
 
 ## Screenshots 
 ![Example screenshot](./app/assets/images/erdiagram.JPG)
