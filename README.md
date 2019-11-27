@@ -15,9 +15,9 @@ Agriculture Project
 The idea of the project is to help farmers and consumers to efficiently monitor field's activities such as products used on fields, watering frequecy etc.
 
 ## Screenshots 
-![Example screenshot](./mnt/c/sei/projects/agri_project/app/assets/images/erdiagram.JPG)
+![Example screenshot](./app/assets/images/erdiagram.JPG)
 
-![Example screenshot](./mnt/c/sei/projects/agri_project/app/assets/images/app1.png)
+![Example screenshot](./app/assets/images/app1.png)
 
 
 ## Technologies
@@ -63,10 +63,10 @@ Due to problems agriculture industry is facing: in terms of the quality of their
 
 ## Contact
 Created by 
- [@Hisham](h.aljahbli@gmail.com)/
- [@Obied](obal3588@colorado.edu)/ 
- [@Lama](lamafa97@gmail.com)/ 
- [@Raji](poower@gmail.com)/ 
- [@Abdullah](abdullah_rashed.a@icloud.com)/ 
+@Hisham     h.aljahbli@gmail.com
+@Obied     obal3588@colorado.edu
+@Lama     lamafa97@gmail.com 
+@Raji     poower@gmail.com 
+@Abdullah     abdullah_rashed.a@icloud.com 
 
 feel free to contact us!
