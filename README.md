@@ -31,7 +31,7 @@ The idea of the project is to help farmers and consumers to efficiently monitor 
 -	As customer, I want to write comments (Optional).
 
 ## Wire Frames
-![Example WireFrame](./app/assets/images/AdminDashboard.png)
+![Example WireFrame](./app/assets/images/HomePage.png)
 
 ![Example WireFrame](./app/assets/images/SignUp.png)
 
