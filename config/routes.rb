@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   get "/admin/makeemp", to: "admins#makeEmp"
-
+  get"/home/qr"  ,to:"home#qr"
   get "/log/qr", to: "logs#generateQrcode"
   root "home#index"
 
