@@ -1,7 +1,9 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to " Already have an account? Log in", new_session_path(resource_name) %><br />
+  <%= link_to " Already have an account? Log in", new_session_path(resource_name), :class => "text-center" %> <br />
 <% end %>
 <br />
+
+
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to "New user? Sign up now!", new_registration_path(resource_name) %><br />
 <% end %>
@@ -24,3 +26,5 @@
     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
   <% end %>
 <% end %>
+
+</div>

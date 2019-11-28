@@ -2,21 +2,22 @@
 <%= f.hidden_field :farm_id, :value => @farm.id %>
 
 <div class="container">
-<div class="row text-white">
+<div class="row text-dark">
  <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-  <div class="px-2">
+  <div class="box3">
 <div>
- <%= f.label :name, 'plot Name'%>
+ <%= f.label :name, 'Plot Name'%>
  <%= f.text_field :name%>
 </div>
 
 <div>
- <%= f.label :crop, 'crop' %>
+ <%= f.label :crop, 'Crop' %>
  <%= f.text_field :crop %>
  </div>
 
  <%= f.submit "Submit" %>
  <% end %> 
  </div>
+</div>
 </div>
 </div>

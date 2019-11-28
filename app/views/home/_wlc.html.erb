@@ -1,6 +1,8 @@
 
 <%= link_to  "Farms", farms_path%>
+
 <% if current_user.admin %>
 <%= link_to  "Admin Dashboard", admins_path%>
 <%end%>
 
+<%= link_to 'Sign out' ,destroy_user_session_path,method: :delete  %>
