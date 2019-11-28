@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
+# Use rqrcode
+gem 'rqrcode'
 # Use Bootstrap4
 gem 'bootstrap', '~> 4.3.1'
 # Use jQuery
