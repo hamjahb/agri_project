@@ -5,7 +5,7 @@ class LogsController < ApplicationController
     @farm = Farm.find(params[:farm_id])
     @plot = Plot.find(params[:plot_id])
     @logs = @plot.logs.all
-    @path = "http://localhost:3000/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
+     @path = "http://localhost:3000/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
   end
 
   def new
@@ -54,7 +54,7 @@ class LogsController < ApplicationController
   # "https://agriproject.herokuapp.com/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs"
   
   def make_qrcode(path)
-    qrcode = RQRCode::QRCode.new("https://agriproject.herokuapp.com/farms/#{params[:farm_id]}/plots/#{params[:plot_id]}/logs")
+    qrcode = RQRCode::QRCode.new(path)
     image = qrcode.as_png(
       resize_gte_to: false,
       resize_exactly_to: false,
