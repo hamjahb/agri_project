@@ -1,4 +1,6 @@
 class FarmsController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @farms = Farm.all
   end
