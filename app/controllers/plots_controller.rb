@@ -1,4 +1,6 @@
 class PlotsController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @farm = Farm.find(params[:farm_id])
     @plots = @farm.plots.all
