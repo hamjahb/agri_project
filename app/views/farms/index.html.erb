@@ -48,7 +48,7 @@
 
 <div class="text-center" class="butt1">
     <button class="butt1" > <%= link_to 'Back', :back %></button> 
-    <% if current_user.admin || current_user.emp%>
-    <button class="butt1"> <%= link_to "Add New farm", new_farm_path %> </button>
+    <% if current_user.admin%>
+      <button class="butt1"> <%= link_to "Add New farm", new_farm_path %> </button>
     <%end%>
 </div>
