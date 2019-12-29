@@ -1,17 +1,38 @@
 <%= form_for  [@farm,@plot,@log ] do |f| %>
-<%= f.hidden_field :plot_id , :value => @plot.id  %>
-<%= f.hidden_field :farm_id , :value => @farm.id  %>
+  <%= f.hidden_field :plot_id , :value => @plot.id  %>
+  <%= f.hidden_field :farm_id , :value => @farm.id  %>
 
-<div class="container">
-<div class="row text-white">
- <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-  <div class="px-2">
-<div>
- <%= f.label :entry, 'Task Name'%>
- <%= f.text_field :entry%>
-</div>
+  <div class="container">
+  <div class="row text-white">
+  <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+    <div class="px-2">
+  <div>
+  <%= f.label :entry, 'Task Name'%>
 
- <%= f.submit "Submit" %>
+  <%
+=begin%>
+  the text field below was removed for the drop down options below it 
+<%
+=end%>
+
+
+  <%
+=begin%>
+ <%= f.text_field :entry%> 
+<%
+=end%>
+
+
+  
+<%= f.select(:entry, raw('<option value="Water">Water</option><option value="Seed">Seed</option><option value="Fertelize">Fertelize</option><option value="hurrdurr">hurrdurr</option>')) %>
+
+
+
+
+
+  </div>
+
+  <%= f.submit "Submit" %>
  <% end %> 
  </div>
  </div>
