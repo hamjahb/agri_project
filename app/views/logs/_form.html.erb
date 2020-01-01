@@ -1,19 +1,53 @@
+<script>
+  $(document).ready(function(){
+    $('#entrySelect').change(function() {
+      if(this.value == "Other") {
+        $('#otherEntryBox').show();
+      }else{
+        $('#otherEntryBox').hide();
+      }
+    });
+  });
+</script>
+
+ <%
+=begin%>
+ the drop down menu shows using the script above if the drop down is other a text box appears 
+<%
+=end%>
+
+
 <%= form_for  [@farm,@plot,@log ] do |f| %>
-<%= f.hidden_field :plot_id , :value => @plot.id  %>
-<%= f.hidden_field :farm_id , :value => @farm.id  %>
+  <%= f.hidden_field :plot_id , :value => @plot.id  %>
+  <%= f.hidden_field :farm_id , :value => @farm.id  %>
+  <div class="container">
+    <div class="row text-white">
+      <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+        <div class="px-2">
+        <div>
+          <%= f.label :entry, 'Task Name'%>
 
-<div class="container">
-<div class="row text-white">
- <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-  <div class="px-2">
-<div>
- <%= f.label :entry, 'Task Name'%>
- <%= f.text_field :entry%>
-</div>
+          
 
- <%= f.submit "Submit" %>
- <% end %> 
+
+          <%= f.select :entry, [ 'Water', 'Seed', 'Fertelize', 'Plow', 'Other' ], 
+          {
+                  prompt: "--Choose One--",
+                }, id: 'entrySelect' %>
+
+          <%
+=begin%>
+ <%= f.text_field :entry, id: "otherEntryBox", style: "display: none;"%>  
+<%
+=end%>
+
+
+
+        </div>
+
+        <%= f.submit "Submit" %>
+      </div>
+    </div>
+  </div>
  </div>
- </div>
- </div>
- </div>
+<% end %> 
